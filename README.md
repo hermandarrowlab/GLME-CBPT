@@ -25,6 +25,10 @@ This repository contains example code and data that can be used to replicate a s
 
 
 ## Preprocessed Data
+
+Example preprocsesed data can be found here:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7703148.svg)](https://doi.org/10.5281/zenodo.7703148).
+
 The data included in the **exampleGlmeFaceHouseAnalysisData.mat** file was derived from the following literature and data repository:
 
 Miller, Kai Joshua. (2016). A library of human electrocorticographic data and analyses. Stanford Digital Repository. Available at: https://purl.stanford.edu/zk881ps0522
