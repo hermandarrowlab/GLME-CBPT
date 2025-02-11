@@ -1,5 +1,5 @@
 # CBPT-GLME-Code
-Last Updated by Seth Konig 1/17/2023
+Last Updated by Seth Konig 2/11/2025
 
 ## Description
 
@@ -13,6 +13,8 @@ This repository contains example code and data that can be used to replicate a s
 * Main Functions
   * **clusterBasedGlmeERD.m:** main cluster based permutation test (CBPT) code.
       * Uses both LMEs and GLMEs depending on input parameters.
+ *  **clusterBasedGlmeERD2D.m:** cluster based permutation test (CBPT) code for 2D data (e.g. time-frequency) code.
+     * Uses LMEs to anlayze normal data e.g. time-frequency power data.
 * Supporting Functions
   * findgaps.m: function that finds gaps in vector indices.
 * Example Code
@@ -21,6 +23,11 @@ This repository contains example code and data that can be used to replicate a s
   * exampleFaceHouseAnlaysisBurst.m: example code for analyzing high-gamma burst data.
   * exampleFaceHouseAnlaysisERP.m: example code for analyzing ERP data.
 
+
+## 2D anlaysis Disclaimer
+We provide the 2D cluster-based permutation LMEs code as a courtesy for those interested in using our proposed method for 2D (e.g. time-frequency) analysis. However, please note that this code has not been peer-reviewed though we have done our best to ensure its validity. 
+
+Analyzing 2D data (e.g., time-frequency) with multiple fixed effects presents additional complexities, as clusters inherently span three dimensions (e.g., time × frequency × fixed effect). This makes it more challenging to properly control for family-wise error rate (FWER) without sacrificing statistical power. Additionally, defining clusters in 2D analyses is more complex than in 1D analyses. To address this, we offer multiple cluster-definition methods, but results may vary depending on the data's complexity. Therefore, we strongly recommend comparing cluster-based permutation results with false discovery rate (FDR) corrected results (e.g.  https://www.mathworks.com/matlabcentral/fileexchange/27418-fdr_bh).
 
 
 
